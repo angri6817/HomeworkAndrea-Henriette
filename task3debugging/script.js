@@ -1,0 +1,42 @@
+    // 1. Score variable
+    let score = 0;
+
+    // 2. Grab references to all moles
+    const moles = document.getElementsByClassName("mole"); //endret klassenavnet til riktig som er "mole" ikke moles
+
+    // 3. Function to show one random mole at a time
+    function showRandomMole() {
+      // Hide all moles first
+      for (let i = 0; i < moles.length; i++) {
+        moles[i].style.display = "none";
+      }
+
+      // Show a random one
+      const randomIndex = Math.floor(Math.random() * moles.length); //ikke lenght men length
+      moles[randomIndex].style.display = "block";
+    }
+
+    // 4. Function to "whack" a mole
+    function whackMole() {
+      // Increase the score
+      score += 1; // lagt til e til scor : score
+      document.getElementById("score").innerText = score;
+      
+      // Hide the mole you just hit
+      this.style.display = "none";
+    }
+
+    // 5. Function to start the game
+    function startGame() {
+      // Reset score
+      score = 0;
+      document.getElementById("score").innerText = score;
+
+      // Show a random mole every second
+      setInterval(showRandomMole, 1000);
+    }
+
+    // 6. Attach click event to each mole
+    for (let i = 0; i <= moles.length; i++) {
+      moles[i].addEventListener("click", whackMole);
+    }
