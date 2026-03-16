@@ -12,7 +12,7 @@
       }
 
       // Show a random one
-      const randomIndex = Math.floor(Math.random() * moles.length); //ikke lenght men length
+      const randomIndex = Math.floor(Math.random() * moles.length); //ikke lenght, men length
       moles[randomIndex].style.display = "block";
     }
 

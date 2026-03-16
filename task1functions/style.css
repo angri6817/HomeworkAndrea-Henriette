@@ -1,3 +1,34 @@
-ul li {
+
+#output {
+    background-color: lavenderblush;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px;
+    border-radius: 20px;
+    border: solid 2px aquamarine;
+    background-color: aliceblue;
+}
+
+ul#tall_liste li {
     list-style: none;
+    padding: 4px;
+    margin-bottom: 4px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid aquamarine;
+}
+
+.inputfelt {
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+
+.listeogknapp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
