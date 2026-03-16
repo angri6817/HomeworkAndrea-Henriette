@@ -19,7 +19,7 @@
     // 4. Function to "whack" a mole
     function whackMole() {
       // Increase the score
-      scor += 1; 
+      score += 1; // Added e to scor : score
       document.getElementById("score").innerText = score;
       
       // Hide the mole you just hit
