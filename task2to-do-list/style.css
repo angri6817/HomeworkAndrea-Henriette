@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e9eef5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.container {
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px (#0000001a);
+    overflow: hidden;
+}
+
+.header {
+    background: #1f3a5f;
+    color: white;
+    padding: 28px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: lightblue;
+}
+
+.inputArea {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.inputArea input {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#myInput {
+    flex: 1;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    background: #284d7a;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #19385d;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+ul li:nth-child(odd) {
+    background: #fafafa;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checked .taskText {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.taskText {
+    flex: 1;
+}
+
+.dueDate {
+    font-size: 14px;
+    color: #666;
+}
+
+.close {
+    cursor: pointer;
+    color: #b02a2a;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 6px 10px;
+}
+
+.close:hover {
+    background: #f5d6d6;
+    border-radius: 5px;
+}
