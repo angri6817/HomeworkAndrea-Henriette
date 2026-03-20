@@ -21,7 +21,7 @@ function renderList() {
       text += " (Due: " + tasks[i].dueDate + ")";
     }
 
-    li.appendChild(document.createTextNode(text));
+    li.append(document.createTextNode(text));
 
     if (tasks[i].checked) {
       li.classList.add("checked");
@@ -30,8 +30,9 @@ function renderList() {
     let span = document.createElement("SPAN");
     let txt = document.createTextNode("\u00D7");
     span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
+    span.append(txt);
+
+    li.append(span);
 
     span.onclick = function (ev) {
       ev.stopPropagation();
@@ -44,7 +45,7 @@ function renderList() {
       renderList();
     };
 
-    ul.appendChild(li);
+    ul.append(li);
   }
 }
 
